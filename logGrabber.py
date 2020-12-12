@@ -16,6 +16,7 @@ class LogEntryGrabber:
 
     def __init__(self, chrome_driver):
         self.chrome_driver = chrome_driver
+        self.chrome_driver.initWebDriver()
 
     def slurpLogs(self):
         """get log entreies from selenium and add to python logger before returning"""
